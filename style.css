@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --primaryColor: rgb(255, 69, 0);
+}
+body {
+  background-color: black;
+  font-family: "Anek Devanagari", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  opacity: 0.8;
+  padding: 10px 40px;
+}
+header div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: white;
+  align-items: center;
+}
+nav h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+nav span {
+  color: var(--primaryColor);
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font: 400;
+}
+nav div p {
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav div p:hover {
+  color: var(--primaryColor);
+}
+
+ button {
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  color: var(--primaryColor);
+  border: 1.5px solid var(--primaryColor);
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+button:hover {
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+.dropdown-container {
+}
+.dropdown p {
+  color: black;
+
+  padding: 5px 35px;
+}
+.dropdown p:hover {
+  color: black;
+  background-color: var(--primaryColor);
+}
+.dropdown {
+  background-color: white;
+  /* padding: 20px 40px; */
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transform: scaleY(0);
+  transform-origin: 50% top;
+  transition: all 0.5s ease;
+}
+
+.dropdown-container:hover .dropdown {
+ visibility: visible;
+ opacity: 1;
+ 
+  transform: scaleY(1);
+}
+
+section{
+    color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height:400px;
+   font-size: 2rem;
+   padding:  0 10%;
+   /* background-color: red; */
+}
