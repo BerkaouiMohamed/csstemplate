@@ -4,61 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      section {
-        display: flex;
-
-        /* width: fit-content; */
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-
-        height: 800px;
-        background-color: black;
-      }
-      .box {
-        height: 100px;
-        width: 100px;
-      }
-      .box1 {
-        background-color: red;
-      }
-      .box2 {
-        background-color: blue;
-      }
-      .box3 {
-        background-color: green;
-      }
-      .box4 {
-        background-color: yellow;
-      }
-      .box5 {
-        background-color: pink;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section>
-      <div class="box box1"></div>
-      <div class="box box2"></div>
-      <div class="box box3"></div>
-      <div class="box box4"></div>
-      <div class="box box5"></div>
-      <div class="box box1"></div>
-      <div class="box box2"></div>
-      <div class="box box3"></div>
-      <div class="box box4"></div>
-      <div class="box box5"></div>
-      <div class="box box1"></div>
-      <div class="box box2"></div>
-      <div class="box box3"></div>
-      <div class="box box4"></div>
-      <div class="box box5"></div>
-      <div class="box box1"></div>
-      <div class="box box2"></div>
-      <div class="box box3"></div>
-      <div class="box box4"></div>
-      <div class="box box5"></div>
+      <div id="background"></div>
+      <nav>
+        <h1>Places</h1>
+        <div>
+          <p>home</p>
+          <p>city guides</p>
+          <p>services</p>
+          <p>travel</p>
+          <p>contact</p>
+        </div>
+      </nav>
+
+      <div class="homecontainer">
+        <div class="description">
+          <h1>Explore The World With Ease</h1>
+          <p>
+            Hope u like it! <a href="">another</a> free template by
+            uicookies.com Under <a href="">License CC 3.0</a>
+          </p>
+          <button>click</button>
+        </div>
+        <form>
+          <div class="from">
+            <div class="custumdiv">
+              <label for="">From</label>
+              <select name="" id="">
+                <option value="tunisia">tunisia</option>
+                <option value="algeria">algeria</option>
+              </select>
+            </div>
+            <div class="custumdiv">
+              <label for="abc">Departure</label>
+              <input type="date" id="abc" />
+            </div>
+
+            <div class="radioInputs">
+              <div>
+                <label for="">round</label> <input type="radio" name="abc" />
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px">
+                <label for="">one way</label>
+                <input type="radio" name="abc" value="" />
+              </div>
+            </div>
+          </div>
+          <div class="to">
+            <div class="custumdiv">
+              <label for="">to</label>
+              <select name="" id="">
+                <option value="tunisia">tunisia</option>
+                <option value="algeria">algeria</option>
+              </select>
+            </div>
+            <div class="custumdiv">
+              <label for="">Arrival</label> <input type="date" id="abc" />
+            </div>
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
     </section>
   </body>
 </html>

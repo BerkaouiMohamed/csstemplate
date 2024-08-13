@@ -2,110 +2,134 @@
   padding: 0;
   margin: 0;
 }
-:root {
-  --primaryColor: rgb(255, 69, 0);
-}
 body {
-  background-color: black;
-  font-family: "Anek Devanagari", sans-serif;
+  font-family: "Lato", sans-serif;
+  background-color: back;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  color: gray;
-  opacity: 0.8;
-  padding: 10px 40px;
-}
-header div {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
-  color: white;
+  height: 80px;
   align-items: center;
-}
-nav h1 {
-  font-size: 3rem;
-  font-weight: 800;
-}
-nav span {
-  color: var(--primaryColor);
-}
 
+  padding: 0 50px;
+  color: white;
+  text-transform: uppercase;
+  z-index: 100000;
+  position: relative;
+}
 nav > div {
   display: flex;
-  align-items: center;
   gap: 30px;
-  text-transform: capitalize;
-  font-size: 1.2rem;
-  font: 400;
 }
-nav div p {
-  color: white;
+nav > div > p {
+  color: rgb(174, 174, 174);
+  transition: color 0.3s ease;
+}
+nav > div > p:hover {
+  color: rgb(255, 255, 255);
   cursor: pointer;
-  transition: all 0.3s ease;
 }
-nav div p:hover {
-  color: var(--primaryColor);
+nav h1 {
+  font-weight: 300;
+  letter-spacing: 10px;
 }
 
- button {
-  width: 150px;
-  height: 50px;
-  background-color: transparent;
-  color: var(--primaryColor);
-  border: 1.5px solid var(--primaryColor);
-  border-radius: 5px;
-  transition: all 0.3s linear;
+section {
+  background-image: url(bg_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
-button:hover {
-  background-color: var(--primaryColor);
+#background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.578);
+  position: absolute;
+}
+
+.homecontainer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  height: calc(100% - 80px);
+  padding: 0 5%;
+  gap: 70px;
+}
+
+.description {
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.description h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+.description p {
+  font-weight: 300;
+  font-size: 18px;
+  word-spacing: 10px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.description p a {
+  color: green;
+  text-decoration: none;
+}
+.description button,input[type="submit"] {
+  background-color: green;
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
   color: white;
 }
-
-.dropdown-container {
+input[type="submit"]{
+  width: 100%;
 }
-.dropdown p {
-  color: black;
-
-  padding: 5px 35px;
-}
-.dropdown p:hover {
-  color: black;
-  background-color: var(--primaryColor);
-}
-.dropdown {
+form {
+  flex: 1;
   background-color: white;
-  /* padding: 20px 40px; */
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  transform: scaleY(0);
-  transform-origin: 50% top;
-  transition: all 0.5s ease;
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
 }
 
-.dropdown-container:hover .dropdown {
- visibility: visible;
- opacity: 1;
- 
-  transform: scaleY(1);
+form .from {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-section{
-    color: white;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   height:400px;
-   font-size: 2rem;
-   padding:  0 10%;
-   /* background-color: red; */
+
+[type="date"],
+select {
+  width: 230px;
+  height: 40px;
+  border: 1px solid rgba(95, 95, 95, 0.463);
+  border-radius: 5px;
+}
+.custumdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.radioInputs {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+form .to {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.to button{
+  margin-top: 20px;
+  
 }
